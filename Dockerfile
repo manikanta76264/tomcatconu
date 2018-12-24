@@ -1,5 +1,6 @@
 FROM tomcat:7-jre8
 COPY tomcat*.xml /usr/local/tomcat/conf
+WORKDIR C:\Users\manik\.jenkins\workspace\tomcatcon3
 RUN cd target
 COPY *.war /usr/local/tomcat/webapps
 EXPOSE 8080
